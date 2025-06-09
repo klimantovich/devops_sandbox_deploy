@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pdf-editor-backend-merge
-  namespace: {{ .Values.namespace }}
   labels:
     app: backend-merge
 spec:
@@ -62,7 +61,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pdf-editor-backend-rotate
-  namespace: {{ .Values.namespace }}
   labels:
     app: backend-rotate
 spec:
@@ -124,7 +122,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pdf-editor-frontend
-  namespace: {{ .Values.namespace }}
   labels:
     app: frontend-pdf
 spec:
@@ -161,4 +158,3 @@ spec:
             - containerPort: 80
               name: web-port
           imagePullPolicy: {{ .Values.image.pullPolicy }}
-...
