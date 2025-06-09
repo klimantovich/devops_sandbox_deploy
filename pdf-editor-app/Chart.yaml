@@ -1,0 +1,9 @@
+apiVersion: v2
+appVersion: "1.0"
+description: A Helm chart for pdf-editor application
+maintainers:
+- email: dipankardas0115@gmail.com
+  name: Dipankar Das
+name: pdf-editor-helm
+type: application
+version: 1.0.0
